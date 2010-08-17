@@ -11,7 +11,7 @@ use constant TEST    => $ENV{'TEST' } || 0;
 use constant DEBUG   => $ENV{'DEBUG'} || 0;
 use constant CHARSET => 'UTF-8';
 
-our $VERSION = '0.4';
+our $VERSION = '0.41';
 
 sub build {
 	my $self = shift;
@@ -271,6 +271,26 @@ Render mail example:
   % stash 'subject' => 'Привет render2';
 
   <p>Привет васса render2!</p>
+
+
+Also you can use Mojolicious plugin:
+
+  plugin 'mail' => {
+    from     => 'sharifulin@gmail.com',
+    encoding => 'base64',
+    how      => 'sendmail',
+    howargs  => [ '/usr/sbin/sendmail -t' ],
+  };
+
+  # in controller
+  $self->helper('mail', mail => {
+    To      => 'sharifulin@gmail.com',
+    Subject => 'Тест',
+    Data    => 'Привет!',
+  });
+
+
+See L<Mojolicious::Plugin::Mail>.
 
 
 =head1 METHODS

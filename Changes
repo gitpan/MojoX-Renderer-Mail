@@ -1,5 +1,9 @@
 Revision history for MojoX-Renderer-Mail
 
+0.41   2010-08-17/11:05
+	Fixed MANIFEST and docs.
+	TODO: more tests
+
 0.4    2010-08-16/14:05
 	Add mail plugin
 

@@ -3,6 +3,7 @@ Changes
 MANIFEST
 README
 lib/MojoX/Renderer/Mail.pm
+lib/Mojolicious/Plugin/Mail.pm
 t/00-load.t
 t/manifest.t
 t/pod-coverage.t

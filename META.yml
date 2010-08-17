@@ -21,12 +21,16 @@ name: MojoX-Renderer-Mail
 provides:
   MojoX::Renderer::Mail:
     file: lib/MojoX/Renderer/Mail.pm
-    version: 0.4
+    version: 0.41
+  Mojolicious::Plugin::Mail:
+    file: lib/Mojolicious/Plugin/Mail.pm
+    version: 0.01
 requires:
   Encode: 0
   MIME::EncWords: 0
   MIME::Lite: 0
+  Mojolicious: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/sharifulin/MojoX-Renderer-Mail.git
-version: 0.4
+version: 0.41

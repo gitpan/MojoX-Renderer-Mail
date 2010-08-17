@@ -157,6 +157,26 @@ SYNOPSIS
   <p>Привет васса render2!</p>
 
 
+Also you can use Mojolicious plugin:
+
+  plugin 'mail' => {
+    from     => 'sharifulin@gmail.com',
+    encoding => 'base64',
+    how      => 'sendmail',
+    howargs  => [ '/usr/sbin/sendmail -t' ],
+  };
+
+  # in controller
+  $self->helper('mail', mail => {
+    To      => 'sharifulin@gmail.com',
+    Subject => 'Тест',
+    Data    => 'Привет!',
+  });
+
+
+See Mojolicious::Plugin::Mail.
+
+
 INSTALLATION
 
 To install this module, run the following commands:

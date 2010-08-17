@@ -15,6 +15,7 @@ my $builder = Module::Build->new(
 		'Encode'         => 0,
 		'MIME::Lite'     => 0,
 		'MIME::EncWords' => 0,
+		'Mojolicious'    => 0,
 	},
 	add_to_cleanup  => [],
 	meta_merge => {

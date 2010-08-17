@@ -11,6 +11,7 @@ WriteMakefile
                            'Test::More' => 0,
                            'MIME::EncWords' => 0,
                            'MIME::Lite' => 0,
+                           'Mojolicious' => 0,
                            'Encode' => 0
                          }
         )
