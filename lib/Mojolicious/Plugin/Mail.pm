@@ -27,6 +27,8 @@ sub register {
 
 __END__
 
+=encoding UTF-8
+
 =head1 NAME
 
 Mojolicious::Plugin::Mail - Mail Mojolicious Plugin using MojoX::Renderer::Mail

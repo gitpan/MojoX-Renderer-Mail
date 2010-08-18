@@ -11,7 +11,7 @@ use constant TEST    => $ENV{'TEST' } || 0;
 use constant DEBUG   => $ENV{'DEBUG'} || 0;
 use constant CHARSET => 'UTF-8';
 
-our $VERSION = '0.41';
+our $VERSION = '0.42';
 
 sub build {
 	my $self = shift;

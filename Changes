@@ -1,5 +1,8 @@
 Revision history for MojoX-Renderer-Mail
 
+0.42   2010-08-18/19:22
+	Fixed CPAN Testers report
+
 0.41   2010-08-17/11:05
 	Fixed MANIFEST and docs.
 	TODO: more tests
